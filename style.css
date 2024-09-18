@@ -1,7 +1,8 @@
-.bulletlist ul{
+.bulletlist {
     color: black;
     font-family: sans-serif;
     text-align: center;
+    background-color:#0a7e8c;color:black;padding:20;
 
 }
 
@@ -25,7 +26,3 @@ p {
 body {
     background-color: #c9ffe5";
 }
-div {
-    background-color:#0a7e8c;color:black;padding:20;
-}
-
