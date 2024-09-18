@@ -9,6 +9,7 @@
 h1 {
   text-align: center;
   style: font-family:courier;
+    
 }
 h2 {
   text-align: center;
@@ -20,3 +21,11 @@ p {
   text-align: left;
   style: font-family:courier;
 }
+
+body {
+    background-color: #c9ffe5";
+}
+div {
+    background-color:#0a7e8c;color:black;padding:20;
+}
+
