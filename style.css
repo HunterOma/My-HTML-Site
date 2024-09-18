@@ -4,3 +4,19 @@
     text-align: center;
 
 }
+
+}
+h1 {
+  text-align: center;
+  style: font-family:courier;
+}
+h2 {
+  text-align: center;
+  style: font-family:courier;
+  style: "border:3px solid blue";
+}
+p {
+  style: color-gray;
+  text-align: left;
+  style: font-family:courier;
+}
