@@ -2,7 +2,7 @@
 <html>
 <style>
   h1 {
-  text-align: center;
+  text-align: left;
   font-family:georgia;
   color: black;
 }
@@ -14,12 +14,23 @@ h2 {
 }
 p {
   style: color-gray;
-  text-align: center;
+  text-align: left;
   font-family:arial;
   color: black;
-div {
+form, label {
     margin: auto;
   }
+  input {
+    margin: auto;
+  }
+  form, p {
+    margin: auto;
+  }
+  
+table, th, td {
+  border:1px solid black;
+}
+
 </style>
 <body style="background-color: CadetBlue;">
 <h1>A Form Test</h1>
@@ -27,7 +38,7 @@ div {
   <form>
     <label for="screenname">What would you like to be written down as?</label> <br>
     <input type="text" id="screenname" name="screenname" value="screenname"> <br>
-    <p>Which coding language is this written in?</p>
+    <p style="font-size: 20px">Which coding language is this written in?</p>
     <input type="radio" id="html" name="html" value="html">
     <label for="html">HTML</label> <br>
     <input type="radio" id="javascript" name="javascript" value="javascript">
