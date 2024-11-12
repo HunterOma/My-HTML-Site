@@ -2,3 +2,70 @@
 <html>
 <head>
 <style>
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #386D91;
+  padding: 10px;
+}
+
+.test {
+  background-color: #B4F0EB;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.test2 {
+  background-color: #B4F0EB;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+.test3 {
+  background-color: #6F3891;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-family:georgia;
+  color: black;
+}
+h2 {
+  text-align: center;
+  font-family:georgia;
+  style: "border:3px solid blue";
+  color: black;
+}
+p {
+  style: color-gray;
+  text-align: center;
+  font-family:arial;
+  color: MidnightBlue;
+  font-size: 20px;
+}
+body {
+  background-color: #999898;
+  }
+</style>
+</head>
+<body>
+
+<h1>Grid Test</h1>
+<p> I messed around a bit with the grids to figure out how they could individually be customized </p>
+
+<div class="grid">
+  <div class="test">Grid1</div>
+  <div class="test2">Grid2</div>
+  <div class="test">Grid3</div>
+  <div class="test3">Grid4</div>
+  <div class="test">Grid5</div>
+  <div class="test">Grid6</div>
+</div>
+
+</body>
+</html>
