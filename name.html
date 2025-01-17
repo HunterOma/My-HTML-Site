@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>HTML Dynamic Pages:Names</title>
+    <style>
+        body {
+            text-align: center;
+        }
+      p {
+            color: blue;
+        }
+    </style>
+  </head>
+  <body>
+<h1>Dynamic Page Test:Names</h1>
+    <h2>Enter your Name</h2>
+    <input id="name" type="text">
+    <button type="button" onclick="EnterName()">Submit</button>
+    <p id="demo"></p>
+    <script>
+      function EnterName() {
+        let user = document.getElementById("name").value;
+
+        document.getElementById("demo").innerHTML =
+          "Hello, " + user;
+      }
+    </script>
+    </body>
+</html>
+    
