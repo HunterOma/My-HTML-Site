@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Site Test: Color</title>
+   <style>
+    text-align: center;
+     </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+  <body>
+    <h1> Dynamic HTML Test, using color</h1>
+    <button type="button" onclick="changeColor()">Color</button>
+    <script>
+function changeColor() {
+  let color = "#" + (Math.random() * 16777215 | 0).toString(16);
+  $("body").css("background-color", color);
+}
+</script>
+
+</body>
+  
+</html>
