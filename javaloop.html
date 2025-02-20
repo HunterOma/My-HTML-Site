@@ -3,29 +3,25 @@
 <body>
 
 <h2>Calculator</h2>
-<input id = "calculatortext1" type ="text" name = "answer1">
-<input id = "calculatortext2" type ="text" name = "answer2">
-<button onclick="function()">Test</button>
-<script>
-myNumbers = {};
-myNumbers[Symbol.iterator] = function() {
-let n = calculatortext1.answer1.value;
-let a = calculatortext2.answer2.value;
-done = false;
-return {
-next() {
-n + a;
-if (n == -1) {done = true}
-return {value:n, done:done};
-}
-};
-}
+<input id="calculatortext1" type="text" placeholder="Enter first number">
+<input id="calculatortext2" type="text" placeholder="Enter second number">
+<button onclick="calculateSum()">Calculate</button>
 
-let text = ""
-for (const num of myNumbers) {
-text += num +"<br>"
+<p id="demo"></p>
+
+<script>
+function calculateSum() {
+    let num1 = parseFloat(document.getElementById("calculatortext1").value);// first value
+    let num2 = parseFloat(document.getElementById("calculatortext2").value);//second value
+
+  if (num1 > -1) {
+  let sum = sum + num1 + num2;// add the two values together.  You could just change this to make it do other math functions from different buttons
+    document.getElementById("demo").innerHTML = "Sum: " + sum;
+} else {
+  { break; }
 }
-document.getElementById("demo").innerHTML = text;
+    
 </script>
+
 </body>
 </html>
