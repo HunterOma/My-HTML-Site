@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculator</h2>
+<form name = "form1">   
+  <input id = "calculatortext" type ="text" name = "answer"> <br> <br>  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">   
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <input type = "button" value = "÷" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "^" onclick = "form1.answer.value += 'Math.pow(x, y)' "> 
+  <br> <br>   
+      <input type = "button" value = "=" onclick = "document.getElementById('demo').innerHTML = eval(form1.answer.value) ">   
+  <br>     
+  </form>
+  <script>
+document.getElementById('demo').innerHTML = Test()
+</script>
+<p id="demo"></p>
+
+</body>
+</html> 
