@@ -1,0 +1,56 @@
+<html>
+
+<body>
+    <h1>Guess The Number</h1>
+    <p>
+       Guess a number between 1 and 10
+    </p>
+
+    <div class="form">
+        <label for="guessField">
+            Guess:
+        </label>
+
+        <input type="text" 
+               id="guessField" 
+               class="guessField">
+
+        <input type="submit" 
+               value="Submit guess" 
+               class="guessSubmit" 
+               id="submitguess">
+    </div>
+<p id="demo">.</p>
+
+    <script type="text/javascript">
+
+        // Generate a Random Number
+        let y = 6
+
+        // Counting the number of guesses
+        // made for correct Guess
+        let guess = 1;
+
+        document.getElementById("submitguess").onclick = function () {
+
+            // Number guessed by user    
+            let x = document.getElementById("guessField").value;
+
+            if (x == y) {
+                document.getElementById("demo").innerHTML = "Congrats! You got it correct"
+            }
+
+            /* If guessed number is greater than actual number*/
+            else if (x > y) {
+                guess++;
+                document.getElementById("demo").innerHTML = "Try a smaller number!"
+            }
+            else {
+                guess++;
+                document.getElementById("demo").innerHTML = "Try a greater number!"
+            }
+        }
+    </script>
+</body>
+
+</html>
