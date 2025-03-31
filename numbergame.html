@@ -24,27 +24,25 @@
 
     <script type="text/javascript">
 
-        // Generate a Random Number
-        let y = 6
+    
+        let y = Math.floor(Math.random() * 20 + 1);
 
-        // Counting the number of guesses
-        // made for correct Guess
         let guess = 1;
 
         document.getElementById("submitguess").onclick = function () {
 
-            // Number guessed by user    
+               
             let x = document.getElementById("guessField").value;
 
             if (x == y) {
-                document.getElementById("demo").innerHTML = "Congrats! You got it correct"
+                document.getElementById("demo").innerHTML = "Congrats! You got it correct!"
             }
 
-            /* If guessed number is greater than actual number*/
             else if (x > y) {
                 guess++;
                 document.getElementById("demo").innerHTML = "Try a smaller number!"
             }
+          
             else {
                 guess++;
                 document.getElementById("demo").innerHTML = "Try a greater number!"
