@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form id="form1" name="form1">
+        <label for="email">Email:</label>
+        <input type="tel" id="email" name="emailAddress" onchange="validateEmail()">
+        <button type="submit">Submit</button>
+        <div id="emailValidationMsg"></div>
+    </form>
+
+<script>
+
+function validateEmail() {
+    
+    const phoneNumber = document.getElementById('emailAddress').value.trim();
+
+    
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    
+    const isValid = pattern.test(emailAddress);
+    document.getElementById('emailValidationMsg').textContent = isValid ? '' : 'Please enter a valid 10-digit phone number.';
+
+    // Return validation status
+    return isValid;
+    document.getElementById('emailValidationMsg').textContent = 'your email is' + emailAddress;;
+
+}
+</script>
+</body>
+</html>
