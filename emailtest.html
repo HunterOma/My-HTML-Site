@@ -19,7 +19,7 @@ function validateEmail() {
 
     
     const isValid = pattern.test(emailAddress);
-    document.getElementById('emailValidationMsg').textContent = isValid ? '' : 'Please enter a valid 10-digit phone number.';
+    document.getElementById('emailValidationMsg').textContent = isValid ? '' : 'Please enter a valid email.';
 
     // Return validation status
     return isValid;
