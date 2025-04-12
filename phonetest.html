@@ -9,22 +9,22 @@
     </form>
 
 <script>
-// Validate phone number function
+
 function validatePhoneNumber() {
-    // Get and trim phone number input
+    
     const phoneNumber = document.getElementById('phoneNumber').value.trim();
 
-    // Regex pattern for 10-digit phone number
+   
     const pattern = /^\d{10}$/;
     const pattern = /^\d{3}-\d{3}-\d{4}$/;
     const pattern = /^\d{3}-\d{3}-\d{4}$/;
     const pattern = /^\+1 \d{3}-\d{3}-\d{4}$/;
 
-    // Validate phone number and update message
+    
     const isValid = pattern.test(phoneNumber);
     document.getElementById('phoneValidationMsg').textContent = isValid ? '' : 'Please enter a valid 10-digit phone number.';
 
-    // Return validation status
+    
     return isValid;
     document.getElementById('phoneValidationMsg').innerhtml = form1.answer.value;;
 
